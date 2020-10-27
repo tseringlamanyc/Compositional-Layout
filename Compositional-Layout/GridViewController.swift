@@ -24,6 +24,7 @@ class GridViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+        confiugreDataSource()
     }
     
     private func configureCollectionView() {
@@ -55,13 +56,21 @@ class GridViewController: UIViewController {
     
     // configure Data Source
     private func confiugreDataSource() {
-        // 1)
+        // 1) Setting up data source
         dataSource = UICollectionViewDiffableDataSource<Section, Int>(collectionView: collectionView, cellProvider: { (collectionView, indexpath, item) -> UICollectionViewCell? in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "labelCell", for: indexpath) as? LabelCell else {
                 fatalError("could not deque")
             }
-            return cell 
+            cell.textlabel.text = "\(item)"
+            cell.backgroundColor = .systemBlue
+            return cell
         })
+        
+        // 2) Setting up initial snapshot
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
+        snapshot.appendSections([.main]) // only one section
+        snapshot.appendItems(Array(1...100))
+        dataSource.apply(snapshot, animatingDifferences: false)
     }
     
 }
