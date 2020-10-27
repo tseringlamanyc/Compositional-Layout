@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		8461218E2547AA6100E2AAC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461218D2547AA6100E2AAC5 /* AppDelegate.swift */; };
 		846121902547AA6100E2AAC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461218F2547AA6100E2AAC5 /* SceneDelegate.swift */; };
-		846121922547AA6100E2AAC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846121912547AA6100E2AAC5 /* ViewController.swift */; };
+		846121922547AA6100E2AAC5 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846121912547AA6100E2AAC5 /* GridViewController.swift */; };
 		846121952547AA6100E2AAC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846121932547AA6100E2AAC5 /* Main.storyboard */; };
 		846121972547AA6300E2AAC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846121962547AA6300E2AAC5 /* Assets.xcassets */; };
 		8461219A2547AA6300E2AAC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846121982547AA6300E2AAC5 /* LaunchScreen.storyboard */; };
+		846121A32547ACAC00E2AAC5 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846121A22547ACAC00E2AAC5 /* LabelCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8461218A2547AA6100E2AAC5 /* Compositional-Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compositional-Layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8461218D2547AA6100E2AAC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8461218F2547AA6100E2AAC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		846121912547AA6100E2AAC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		846121912547AA6100E2AAC5 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		846121942547AA6100E2AAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		846121962547AA6300E2AAC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846121992547AA6300E2AAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8461219B2547AA6300E2AAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846121A22547ACAC00E2AAC5 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				8461218D2547AA6100E2AAC5 /* AppDelegate.swift */,
 				8461218F2547AA6100E2AAC5 /* SceneDelegate.swift */,
-				846121912547AA6100E2AAC5 /* ViewController.swift */,
+				846121912547AA6100E2AAC5 /* GridViewController.swift */,
+				846121A22547ACAC00E2AAC5 /* LabelCell.swift */,
 				846121932547AA6100E2AAC5 /* Main.storyboard */,
 				846121962547AA6300E2AAC5 /* Assets.xcassets */,
 				846121982547AA6300E2AAC5 /* LaunchScreen.storyboard */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846121922547AA6100E2AAC5 /* ViewController.swift in Sources */,
+				846121922547AA6100E2AAC5 /* GridViewController.swift in Sources */,
 				8461218E2547AA6100E2AAC5 /* AppDelegate.swift in Sources */,
+				846121A32547ACAC00E2AAC5 /* LabelCell.swift in Sources */,
 				846121902547AA6100E2AAC5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
